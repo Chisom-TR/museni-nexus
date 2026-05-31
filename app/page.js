@@ -1,3 +1,8 @@
 export default function Home() {
-  return <h1>Museni Nexus</h1>;
+    return (
+        <div>
+            <h1>Museni Nexus</h1>
+            <p>Transforming Data into Strategic Advantage</p>
+        </div>
+    );
 }
