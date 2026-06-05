@@ -16,6 +16,7 @@ p {
     font-size: 1.25rem;
     color: #9aa3b2;     /* muted gray — quieter than the heading */
     margin: 0;
+    max-width: 40rem; 
 }
 
 .gradient-text {
@@ -48,7 +49,6 @@ p {
   justify-content: center;  /* center them vertically */
   align-items: center;      /* center them horizontally */
   padding: 1.5rem;          /* breathing room from the screen edges */
-  max-width: 40rem;
 }
 
 .navbar-logo {
