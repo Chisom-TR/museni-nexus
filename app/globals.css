@@ -40,3 +40,17 @@ p {
 .cta-button:hover {
   opacity: 0.9;
 }
+
+.hero {
+  min-height: 100vh;        /* fill at least the full screen height */
+  display: flex;            /* turn on flexbox for this box */
+  flex-direction: column;   /* stack children top-to-bottom */
+  justify-content: center;  /* center them vertically */
+  align-items: center;      /* center them horizontally */
+  padding: 1.5rem;          /* breathing room from the screen edges */
+}
+
+.navbar-logo img {
+  height: 2rem;   /* shrink to ~32px tall */
+  width: auto;    /* keep the original proportions */
+}
