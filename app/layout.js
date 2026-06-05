@@ -5,10 +5,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header className="navbar">
-          <span className="navbar-logo">
+          <div className="navbar-logo">
             <img src="/logo_transparent.png" alt="Museni Nexus logo" />
-            Museni <span className="gradient-text">Nexus</span>
-          </span>
+            <span className="navbar-logo-text">
+              <span>Museni</span>
+              <span className="gradient-text">Nexus</span>
+            </span>
+          </div>
           <nav className="navbar-links">
             <a href="#">Services</a>
             <a href="#">About</a>
