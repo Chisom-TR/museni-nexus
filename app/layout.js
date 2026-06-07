@@ -18,7 +18,16 @@ export default function RootLayout({ children }) {
             <a href="#">Contact</a>
           </nav>
         </header>
-        {children}
+        
+        <main className="content">
+          {children}
+        </main>
+
+        <footer className="footer">
+          <p className="footer-brand">Museni <span className="gradient-text">Nexus</span></p>
+          <p className="footer-tagline">Transforming data into strategic advantage.</p>
+          <p className="footer-copy">© {new Date().getFullYear()} Museni Nexus. All rights reserved.</p>
+        </footer>
       </body>
     </html>
   );

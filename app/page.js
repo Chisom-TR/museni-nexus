@@ -29,13 +29,16 @@ export default function Home() {
       </div>
 
       <section className="services">
-        {services.map((service) => (
-          <Card
-            key={service.title}
-            title={service.title}
-            description={service.description}
-          />
-        ))}
+        <h2 className="services-heading">Our Services</h2>
+        <div className="services-grid">
+            {services.map((service) => (
+            <Card
+                key={service.title}
+                title={service.title}
+                description={service.description}
+            />
+            ))}
+        </div>
       </section>
     </>
   );
