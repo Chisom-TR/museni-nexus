@@ -1,3 +1,5 @@
+import Card from "./components/Card";
+
 export default function Home() {
     return (
 
@@ -14,18 +16,18 @@ export default function Home() {
 
 
             <section className="services">
-                <div className="card">
-                    <h3>Data Analytics Engineering</h3>
-                    <p>Pipelines, warehouses, and dashboards that turn scattered data into a single, trustworthy source of truth.</p>
-                </div>
-                <div className="card">
-                    <h3>Digital Process Automation</h3>
-                    <p>Replace slow, manual workflows with reliable automation — freeing your team for the work that needs a human.</p>
-                </div>
-                    <div className="card">
-                    <h3>Enterprise Digital Architecture</h3>
-                    <p>Scalable, secure system design that connects your tools and data into one coherent, future-ready platform.</p>
-                </div>
+            <Card
+                title="Data Analytics Engineering"
+                description="Pipelines, warehouses, and dashboards that turn scattered data into a single, trustworthy source of truth."
+            />
+            <Card
+                title="Digital Process Automation"
+                description="Replace slow, manual workflows with reliable automation — freeing your team for the work that needs a human."
+            />
+            <Card
+                title="Enterprise Digital Architecture"
+                description="Scalable, secure system design that connects your tools and data into one coherent, future-ready platform."
+            />
             </section>
         </>
     );
