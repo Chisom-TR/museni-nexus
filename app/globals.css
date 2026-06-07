@@ -1,0 +1,118 @@
+body {
+    background-color: #050816; /* deep navy, pulled from my logo with Claude */
+    color: #e6e8f0;            /* soft off-white text */
+    font-family: system-ui, sans-serif;
+    margin: 0;                 /* remove the browser's default edge gap */
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;    /* big, prominent heading */
+    font-weight: 700;   /* bold (400 = normal, 700 = bold) */
+    margin: 2rem 0 1rem; /* space above and below */
+}
+
+p {
+    font-size: 1.25rem;
+    color: #9aa3b2;     /* muted gray — quieter than the heading */
+    margin: 0;
+    max-width: 40rem; 
+}
+
+.gradient-text {
+    background-image: linear-gradient(120deg, #2dd4bf, #22d3ee, #3b82f6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-image: linear-gradient(120deg, #2dd4bf, #22d3ee, #3b82f6);
+  color: #050816;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+}
+
+.hero {
+  min-height: 100vh;        /* fill at least the full screen height */
+  display: flex;            /* turn on flexbox for this box */
+  flex-direction: column;   /* stack children top-to-bottom */
+  justify-content: center;  /* center them vertically */
+  align-items: center;      /* center them horizontally */
+  padding: 1.5rem;          /* breathing room from the screen edges */
+}
+
+.navbar-logo {
+  display: flex;          /* symbol and text sit in a ROW */
+  align-items: center;    /* vertically center them against each other */
+  gap: 0.6rem;            /* space between the symbol and the words */
+}
+
+.navbar-logo img {
+  height: 2.75rem;        /* ~44px tall — this sizes the whole symbol */
+  width: auto;            /* keep its proportions */
+}
+
+.navbar-logo-text {
+  display: flex;          /* the two words become flex items... */
+  flex-direction: column; /* ...stacked top-to-bottom */
+  line-height: 1.05;      /* pull the two lines close together */
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;                  /* logo and links become a row */
+  justify-content: space-between; /* push them to opposite ends */
+  align-items: center;            /* vertically center them */
+  padding: 1rem 2rem;             /* breathing room inside the bar */
+}
+
+.navbar-links a {
+  color: #e6e8f0;        /* off-white instead of default link blue */
+  text-decoration: none; /* remove the underline */
+  margin-left: 1.5rem;   /* space the links apart */
+}
+
+.navbar-links a:hover {
+  color: #22d3ee;        /* brand cyan when hovered */
+}
+
+.services {
+  display: flex;        /* the three cards become a row */
+  flex-wrap: wrap;      /* ...but allowed to wrap onto new lines */
+  gap: 1.5rem;          /* space between cards */
+  max-width: 70rem;     /* don't let the row get too wide */
+  margin: 0 auto;       /* center the whole section */
+  padding: 4rem 2rem;   /* space above/below and on the sides */
+}
+
+.card {
+  flex: 1;              /* each card grows to take an EQUAL share */
+  min-width: 260px;     /* ...but never thinner than this */
+  background-color: #0e1430;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  text-align: left;     /* override the page's centered text */
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin: 0;
+  max-width: none;      /* cancel the global paragraph width cap */
+}
