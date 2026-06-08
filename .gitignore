@@ -13,3 +13,4 @@
 # Logs and OS clutter
 *.log
 .DS_Store
+/.ideas
