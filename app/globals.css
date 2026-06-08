@@ -87,15 +87,6 @@ p {
   color: #22d3ee;        /* brand cyan when hovered */
 }
 
-.services {
-  display: flex;        /* the three cards become a row */
-  flex-wrap: wrap;      /* ...but allowed to wrap onto new lines */
-  gap: 1.5rem;          /* space between cards */
-  max-width: 70rem;     /* don't let the row get too wide */
-  margin: 0 auto;       /* center the whole section */
-  padding: 4rem 2rem;   /* space above/below and on the sides */
-}
-
 .card {
   flex: 1;              /* each card grows to take an EQUAL share */
   min-width: 260px;     /* ...but never thinner than this */
