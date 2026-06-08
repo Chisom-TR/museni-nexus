@@ -52,20 +52,6 @@ p {
 }
 
 .navbar-logo {
-  display: flex;          /* symbol and text sit in a ROW */
-  align-items: center;    /* vertically center them against each other */
-  gap: 0.6rem;            /* space between the symbol and the words */
-}
-
-.navbar-logo img {
-  height: 2.75rem;        /* ~44px tall — this sizes the whole symbol */
-  width: auto;            /* keep its proportions */
-}
-
-.navbar-logo-text {
-  display: flex;          /* the two words become flex items... */
-  flex-direction: column; /* ...stacked top-to-bottom */
-  line-height: 1.05;      /* pull the two lines close together */
   font-size: 1.25rem;
   font-weight: 700;
 }
