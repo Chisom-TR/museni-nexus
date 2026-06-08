@@ -43,12 +43,12 @@ p {
 }
 
 .hero {
-  min-height: 100vh;        /* fill at least the full screen height */
+  /* min-height: 100vh;        fill at least the full screen height */
   display: flex;            /* turn on flexbox for this box */
   flex-direction: column;   /* stack children top-to-bottom */
   justify-content: center;  /* center them vertically */
   align-items: center;      /* center them horizontally */
-  padding: 1.5rem;          /* breathing room from the screen edges */
+  padding: 5rem 1.5rem;          /* breathing room from the screen edges */
 }
 
 .navbar-logo {
@@ -87,15 +87,6 @@ p {
   color: #22d3ee;        /* brand cyan when hovered */
 }
 
-.services {
-  display: flex;        /* the three cards become a row */
-  flex-wrap: wrap;      /* ...but allowed to wrap onto new lines */
-  gap: 1.5rem;          /* space between cards */
-  max-width: 70rem;     /* don't let the row get too wide */
-  margin: 0 auto;       /* center the whole section */
-  padding: 4rem 2rem;   /* space above/below and on the sides */
-}
-
 .card {
   flex: 1;              /* each card grows to take an EQUAL share */
   min-width: 260px;     /* ...but never thinner than this */
@@ -104,6 +95,12 @@ p {
   border-radius: 0.75rem;
   padding: 1.75rem;
   text-align: left;     /* override the page's centered text */
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  border-color: rgba(34, 211, 238, 0.5);  /* brand cyan edge */
+  transform: translateY(-4px);             /* lift the card up slightly */
 }
 
 .card h3 {
@@ -115,4 +112,63 @@ p {
   font-size: 1rem;
   margin: 0;
   max-width: none;      /* cancel the global paragraph width cap */
+}
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2.5rem 2rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer p {
+  max-width: none;   /* cancel the global 40rem cap so footer text centers full-width */
+}
+
+.footer-brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.footer-tagline {
+  color: #9aa3b2;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.footer-copy {
+  color: #5b6478;       /* dim, since copyright is the least important text */
+  font-size: 0.875rem;
+}
+
+body {
+  background-color: #050816;
+  color: #e6e8f0;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  text-align: center;
+  min-height: 100vh;        /* ← add: page is at least one screen tall */
+  display: flex;            /* ← add: stack header / main / footer... */
+  flex-direction: column;   /* ← add: ...vertically */
+}
+
+.content {
+  flex: 1;                  /* grow to fill leftover space, pushing footer down */
+}
+
+.services {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.services-heading {
+  font-size: 2rem;
+  margin: 0 0 2rem;   /* space below the heading, before the cards */
+  text-align: center;
+}
+
+.services-grid {
+  display: flex;       /* the card row now lives here */
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
