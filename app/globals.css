@@ -54,6 +54,8 @@ p {
 .navbar-logo {
   font-size: 1.25rem;
   font-weight: 700;
+  color: inherit;          /* keep the off-white text, not default link blue */
+  text-decoration: none;   /* no underline */
 }
 
 .navbar {

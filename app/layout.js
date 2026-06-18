@@ -6,9 +6,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header className="navbar">
-          <div className="navbar-logo">
+          <Link href="/" className="navbar-logo">
             Museni <span className="gradient-text">Nexus</span>
-          </div>
+          </Link>
           <nav className="navbar-links">
             <a href="#">Services</a>
             <a href="#">About</a>
