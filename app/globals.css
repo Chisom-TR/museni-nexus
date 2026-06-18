@@ -54,6 +54,8 @@ p {
 .navbar-logo {
   font-size: 1.25rem;
   font-weight: 700;
+  color: inherit;          /* keep the off-white text, not default link blue */
+  text-decoration: none;   /* no underline */
 }
 
 .navbar {
@@ -125,6 +127,23 @@ p {
   color: #5b6478;       /* dim, since copyright is the least important text */
   font-size: 0.875rem;
 }
+
+/* Legal pages (Imprint / Privacy) */
+.legal {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: left;        /* legal text reads better left-aligned */
+}
+.legal h1 { font-size: 2.5rem; margin: 0 0 1rem; }
+.legal h2 { font-size: 1.25rem; margin: 2rem 0 0.5rem; }
+.legal a  { color: #22d3ee; }
+
+.footer-copy a {
+  color: #9aa3b2;          /* a touch brighter than the copyright text, so it reads as a link */
+  text-decoration: none;
+}
+.footer-copy a:hover { color: #22d3ee; }
 
 body {
   background-color: #050816;
