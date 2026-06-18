@@ -1,4 +1,5 @@
 import "./globals.css"
+import Link from "next/link";
 
 export default function RootLayout({ children }) {
   return (
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
         <footer className="footer">
           <p className="footer-brand">Museni <span className="gradient-text">Nexus</span></p>
           <p className="footer-tagline">Transforming data into strategic advantage.</p>
-          <p className="footer-copy">© {new Date().getFullYear()} Museni Nexus. All rights reserved.</p>
+          <p className="footer-copy">© {new Date().getFullYear()} Museni Nexus. All rights reserved. | <Link href="/imprint">Legal Notice (Impressum)</Link></p>
         </footer>
       </body>
     </html>
