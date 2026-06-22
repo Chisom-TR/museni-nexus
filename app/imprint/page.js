@@ -14,11 +14,8 @@ export default function Imprint() {
       <h2>Contact</h2>
       <p>E-Mail: <a href="mailto:chisom.nwuzor@museninexus.com">chisom.nwuzor@museninexus.com</a></p>
 
-      <h2>Business ID</h2>
+      <h2>VAT ID</h2>
       <p>DE462290604</p>
-
-      <h2>Tax Number</h2>
-      <p>249/255/60703</p>
     </section>
   );
 }
