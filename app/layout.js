@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
           <nav className="navbar-links">
             <a href="#">Services</a>
             <a href="#">About</a>
-            <a href="#">Contact</a>
+            <Link href="/contact">Contact</Link>
           </nav>
         </header>
         
