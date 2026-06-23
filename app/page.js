@@ -1,4 +1,5 @@
 import Card from "./components/Card";
+import Link from "next/link";
 
 const services = [
   {
@@ -25,7 +26,7 @@ export default function Home() {
           architecture — turning your raw data into decisions that move the
           business forward.
         </p>
-        <a className="cta-button" href="#">Get Your Free Consultation</a>
+        <Link className="cta-button" href="/contact">Get in Touch</Link>
       </div>
 
       <section className="services">
