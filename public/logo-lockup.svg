@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 180" width="770" height="180" role="img" aria-label="Museni Nexus">
+  <defs>
+    <linearGradient id="gMark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2dd4bf" />
+      <stop offset="0.5" stop-color="#22d3ee" />
+      <stop offset="1" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="gText" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0" stop-color="#2dd4bf" />
+      <stop offset="0.5" stop-color="#22d3ee" />
+      <stop offset="1" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Mark (the N), scaled down from its 256 box and placed on the left -->
+  <g transform="translate(20,20) scale(0.55)">
+    <path d="M84 180 L84 76 L172 180 L172 76" fill="none" stroke="url(#gMark)"
+          stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="84" cy="76" r="15" fill="#ffffff" />
+    <circle cx="172" cy="180" r="15" fill="#ffffff" />
+  </g>
+
+  <!-- Wordmark: Museni (white) + Nexus (gradient), anchored at a shared junction -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Arial, sans-serif"
+     font-weight="700" font-size="92" letter-spacing="-1">
+    <text x="470" y="123" text-anchor="end" fill="#ffffff">Museni</text>
+    <text x="488" y="123" text-anchor="start" fill="url(#gText)">Nexus</text>
+  </g>
+</svg>
