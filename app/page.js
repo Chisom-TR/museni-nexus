@@ -25,7 +25,7 @@ export default function Home() {
           architecture — turning your raw data into decisions that move the
           business forward.
         </p>
-        <a className="cta-button" href="#">Get Your Free Consultation</a>
+        <a className="cta-button" href="#">Get in Touch</a>
       </div>
 
       <section className="services">
