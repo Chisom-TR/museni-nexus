@@ -52,10 +52,15 @@ p {
 }
 
 .navbar-logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: inherit;          /* keep the off-white text, not default link blue */
-  text-decoration: none;   /* no underline */
+  display: inline-flex;    /* wrap the logo image cleanly */
+  align-items: center;
+  text-decoration: none;   /* no underline on the link */
+}
+
+.navbar-logo img {
+  height: 2.25rem;         /* ~36px tall; width follows automatically */
+  width: auto;
+  display: block;
 }
 
 .navbar {
@@ -113,9 +118,9 @@ p {
   max-width: none;   /* cancel the global 40rem cap so footer text centers full-width */
 }
 
-.footer-brand {
-  font-size: 1.25rem;
-  font-weight: 700;
+.footer-brand img {
+  height: 2.25rem;   /* same height as the navbar logo, so they match exactly */
+  width: auto;
 }
 
 .footer-tagline {
