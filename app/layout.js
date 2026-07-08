@@ -10,8 +10,8 @@ export default function RootLayout({ children }) {
             <img src="/logo-lockup.svg" alt="Museni Nexus" />
           </Link>
           <nav className="navbar-links">
-            <a href="#">Services</a>
-            <a href="#">About</a>
+            <Link href="/services">Services</Link>
+            <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
           </nav>
         </header>
