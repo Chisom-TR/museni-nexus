@@ -5,14 +5,17 @@ const services = [
   {
     title: "Data Analytics Engineering",
     description: "Pipelines, warehouses, and dashboards that turn scattered data into a single, trustworthy source of truth.",
+    href: "/services#data-analytics-engineering",
   },
   {
     title: "Digital Process Automation",
     description: "Replace slow, manual workflows with reliable automation — freeing your team for the work that needs a human.",
+    href: "/services#digital-process-automation",
   },
   {
     title: "Enterprise Digital Architecture",
     description: "Scalable, secure system design that connects your tools and data into one coherent, future-ready platform.",
+    href: "/services#enterprise-digital-architecture",
   },
 ];
 
@@ -37,6 +40,7 @@ export default function Home() {
                 key={service.title}
                 title={service.title}
                 description={service.description}
+                href={service.href}
             />
             ))}
         </div>
