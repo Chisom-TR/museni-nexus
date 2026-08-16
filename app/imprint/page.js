@@ -7,14 +7,14 @@ export default function Imprint() {
       <p>
         Chisom Nwuzor<br />
         Analytics Engineering &amp; Business Automation<br />
-        Apostelgasse 20<br />
-        97421 Schweinfurt
+        Karl-Brand-Str 42<br />
+        97422 Schweinfurt
       </p>
 
       <h2>Contact</h2>
       <p>E-Mail: <a href="mailto:chisom.nwuzor@museninexus.com">chisom.nwuzor@museninexus.com</a></p>
 
-      <h2>VAT ID</h2>
+      <h2>Business ID</h2>
       <p>DE462290604</p>
     </section>
   );

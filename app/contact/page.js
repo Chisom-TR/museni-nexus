@@ -3,35 +3,45 @@ export default function Contact() {
     <section className="contact">
       <h1>Get in Touch</h1>
       <p className="contact-intro">
-        Have a data challenge or a manual process you would like to automate?
-        I would love to hear about it. Reach out through any of the channels
-        below — I usually reply within one business day.
+        Have a data challenge or a manual process you would like to automate? I
+        would love to hear about it. Reach out through any of the channels below
+        — I usually reply within one business day.
       </p>
 
-      <ul className="contact-methods">
-        <li>
-          <span className="contact-label">Email</span>
-          <a href="mailto:chisom.nwuzor@museninexus.com">chisom.nwuzor@museninexus.com</a>
-        </li>
-        <li>
-          <span className="contact-label">Phone</span>
-          <a href="tel:+4915211525272">+49 1521 1525272</a>
-        </li>
-      </ul>
-
-      <div className="contact-socials">
-        <a
-          href="https://www.linkedin.com/in/chisomnwuzor-analyticsengineer/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon"
-          aria-label="Chisom Nwuzor on LinkedIn"
-        >
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-          </svg>
+      <div className="contact-channel">
+        <div className="contact-label">Email</div>
+        <a href="mailto:chisom.nwuzor@museninexus.com">
+          chisom.nwuzor@museninexus.com
         </a>
       </div>
+
+      <div className="contact-channel">
+        <div className="contact-label">Phone</div>
+        <a href="tel:+4915211525272">+49 1521 1525272</a>
+      </div>
+
+      <div className="contact-channel">
+        <div className="contact-label">Schedule</div>
+        <a
+          href="https://calendar.app.google/6dAbHXXtbNjs4zEb6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Book a 15-minute call →
+        </a>
+      </div>
+
+      <a
+        className="contact-social"
+        href="https://www.linkedin.com/in/your-profile"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
+        </svg>
+      </a>
 
       <p className="contact-location">
         Based in Germany · Working with clients remotely.
